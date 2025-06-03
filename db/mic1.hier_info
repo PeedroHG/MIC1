@@ -1,56 +1,59 @@
-|ULA_1bit
-COUT <= FULL_ADDER_1bit:inst5.COUT
-INVA => inst2.IN0
-A => inst3.IN0
-ENA => inst3.IN1
-B => inst.IN0
-ENB => inst.IN1
-CIN => FULL_ADDER_1bit:inst5.CIN
-F0 => decoder_2x4:inst4.I0
-F1 => decoder_2x4:inst4.I1
-S <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ULA_1bit|FULL_ADDER_1bit:inst5
-O <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst5.IN0
-A => inst8.IN0
-B => inst5.IN1
-B => inst8.IN2
-CIN => inst6.IN1
-CIN => inst9.IN0
-EN => inst.IN1
-EN => inst8.IN1
-EN => inst9.IN2
-COUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ULA_1bit|decoder_2x4:inst4
-O0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
-I0 => inst4.IN0
-I0 => inst1.IN0
-I0 => inst7.IN0
-I0 => inst3.IN0
-I1 => inst5.IN0
-I1 => inst6.IN0
-I1 => inst2.IN1
-I1 => inst3.IN1
-O1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-02 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-O3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ULA_1bit|logic_unit:inst6
-AND <= inst.DB_MAX_OUTPUT_PORT_TYPE
-A => inst4.IN0
-A => inst6.IN1
-B => inst4.IN1
-B => inst6.IN0
-B => inst5.IN0
-EN[0] => inst.IN1
-EN[1] => inst2.IN1
-EN[2] => inst3.IN1
-OR <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-NOT_B <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+|REGISTER_8bit
+OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+LOAD => inst2.IN0
+LOAD => inst1.IN0
+LOAD => inst8.IN0
+LOAD => inst7.IN0
+LOAD => inst14.IN0
+LOAD => inst10.IN0
+LOAD => inst5.IN0
+LOAD => inst4.IN0
+LOAD => inst18.IN0
+LOAD => inst17.IN0
+LOAD => inst26.IN0
+LOAD => inst25.IN0
+LOAD => inst30.IN0
+LOAD => inst29.IN0
+LOAD => inst22.IN0
+LOAD => inst21.IN0
+IN_LOAD[0] => inst3.IN0
+IN_LOAD[0] => inst1.IN1
+IN_LOAD[1] => inst6.IN0
+IN_LOAD[1] => inst4.IN1
+IN_LOAD[2] => inst19.IN0
+IN_LOAD[2] => inst17.IN1
+IN_LOAD[3] => inst23.IN0
+IN_LOAD[3] => inst21.IN1
+IN_LOAD[4] => inst9.IN0
+IN_LOAD[4] => inst7.IN1
+IN_LOAD[5] => inst15.IN0
+IN_LOAD[5] => inst10.IN1
+IN_LOAD[6] => inst27.IN0
+IN_LOAD[6] => inst25.IN1
+IN_LOAD[7] => inst31.IN0
+IN_LOAD[7] => inst29.IN1
+CLOCK => inst.CLK
+CLOCK => inst12.CLK
+CLOCK => inst13.CLK
+CLOCK => inst11.CLK
+CLOCK => inst16.CLK
+CLOCK => inst24.CLK
+CLOCK => inst28.CLK
+CLOCK => inst20.CLK
+IN[0] => inst.DATAIN
+IN[1] => inst11.DATAIN
+IN[2] => inst16.DATAIN
+IN[3] => inst20.DATAIN
+IN[4] => inst12.DATAIN
+IN[5] => inst13.DATAIN
+IN[6] => inst24.DATAIN
+IN[7] => inst28.DATAIN
 
 
