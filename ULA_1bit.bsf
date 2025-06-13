@@ -82,8 +82,8 @@ applicable agreement for further details.
 	(port
 		(pt 120 32)
 		(output)
-		(text "S" (rect 0 0 8 14)(font "Arial" (font_size 8)))
-		(text "S" (rect 91 27 99 41)(font "Arial" (font_size 8)))
+		(text "OUT" (rect 0 0 24 14)(font "Arial" (font_size 8)))
+		(text "OUT" (rect 75 27 99 41)(font "Arial" (font_size 8)))
 		(line (pt 120 32)(pt 104 32))
 	)
 	(port
